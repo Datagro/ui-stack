@@ -80,7 +80,7 @@ class LanguageLoader extends React.Component {
             return null
 
         return (
-<IntlProvider locale={locale} messages={messages} onError={(error) => { console.log(error) }}>
+            <IntlProvider locale={language} messages={messages}>
                 <IntlStore>
                     {this.props.children}
                 </IntlStore>
